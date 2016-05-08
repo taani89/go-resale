@@ -1,0 +1,32 @@
+<ion-modal-view class="modal-view">
+	<div class="bar bar-header bar-calm">
+  		<h1 class="title modal-title">Upload a Product</h1>
+		<a class="button button-clear" ng-click="product_upload_modal.hide()"><span class="icon ion-close"></span></a>
+	</div>
+	<ion-content class="padding has-header">
+		<div class="row">
+      		<div class="col">
+        		<div class="upload-product">
+					<p></p>
+					<h4 class="title"><strong>Upload a Product to Sell</strong></h4>
+					<label class="item item-input">
+  					<span class="input-label icon ion-android-create"> Title: 
+						  <input class="multi-input" type="text" name="title" ng-model="product.title" ></span>
+					</label>
+					<label class="item item-input">
+  					<span class="input-label icon ion-ios-compose"> Description: 
+						  <input class="multi-input" type="text" name="description" ng-model="product.description"></span>
+					</label>
+					<label class="item item-input">
+  					<span class="input-label icon ion-pricetag"> Price: 
+						  <input class="multi-input" type="text" name="price" ng-model="product.price"></span>
+					</label>
+					
+					<button type="submit" class="button button-block button-balanced icon ion-ios-upload" ng-click="uploadItem()" >
+  					 Submit
+					</button>
+        		</div>
+      		</div>
+		</div>
+	</ion-content>
+</ion-modal-view>

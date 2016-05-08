@@ -1,0 +1,43 @@
+<ion-view view-title="Checkout" class="checkout-view">
+   <ion-content>
+       <div class="list">      
+         <div class="item item-divider shop-section-title">
+               <span class="title-copy">Checkout Process</span>
+         </div>
+               <a class="item item-icon-left add-new-card" ng-click="showTransfer()">
+               <i class="icon ion-paper-airplane"></i>     Shipping Option       </a>
+                 <div class="item item-divider shop-section-title">
+                      <span class="title-copy">Order Address</span>      </div>
+                        <div class="item row padding billing">
+            
+                                       <div class="col col-50 shipping-address">         
+                                         <div class="row"><strong>Shipping Address</strong> </div>
+                                            <div class="row">Full Name:{{user.attributes.fullName}} </div>          
+                                            <div class="row">Address 2: {{user.attributes.address2}}</div>     
+                              <div class="row">City: {{user.attributes.city}}</div>     
+                              <div class="row">State: {{user.attributes.state}}</div>
+                               <div class="row">Postal Code: {{user.attributes.postalCode}}</div>   
+                               <div class="row">Phone Number: {{user.attributes.phoneNumber}}</div>  
+                                  </div>
+                                  </div>
+                                    <div class="item item-divider shop-section-title">
+                                              <span class="title-copy\">Total summary</span>     
+                                               </div>          
+                                               <div class="item row padding totals">        
+                                                 <div class="col col-50">        
+                                                   <div class="row">Subtotal</div>                    
+                                                   </div>        
+                                                   <div class="col col-50 totals-numbers">         
+                                                     <div class="row">RM{{ getSubtotal()*data2.selectQuantity }}</div>                        
+                                                     </div>    
+                                                     </div>     
+                                                     <div class="item item-divider shop-section-title">        
+                                                       <span class="title-copy">Order Total</span>     
+                                                       <span class="order-total-value section-action">RM{{getSubtotal()*data2.selectQuantity}}</span>
+                                                             </div>
+                                                                   <div class="row padding">        
+                                    <button  class="button button-block button-energized submit-order-btn" ng-click="order()">  Place Order </button>
+                                    </div>
+       </div>          
+                                     </ion-content>
+                                     </ion-view>

@@ -1,0 +1,28 @@
+<ion-modal-view class="modal-view">
+	<div class="bar bar-header bar-calm">
+  		<h1 class="title modal-title">Post Topic</h1>
+		<p></p>
+		<a class="button button-clear" ng-click="post_topic_modal.hide()"><span class="icon ion-close"></span></a>
+	</div>
+	<ion-content class="padding has-header">
+		<div class="row">
+      		<div class="col">
+        		<div class="post-topic">
+					<p></p>
+					<h4 class="title"><strong>Create a Forum Topic</strong></h4>
+					<label class="item item-input">
+  					<span class="input-label icon ion-android-create">Title: 
+						  <input class="multi-input" type="text" name="title" ng-model="data.title" ></span>
+					</label>
+					<label class="item item-input">
+  					<span class="input-label icon ion-ios-compose">Content: 
+						  <input class="multi-input" type="text" name="content" ng-model="data.content"></span>
+					</label>
+					<button type="submit" class="button button-block button-balanced icon ion-ios-upload" ng-click="postTopic()" >
+  					 Submit
+					</button>
+        		</div>
+      		</div>
+		</div>
+	</ion-content>
+</ion-modal-view>

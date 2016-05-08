@@ -1,0 +1,51 @@
+<ion-view view-title="Shipping Address" class="shipping-address-view">
+  <ion-content>
+    <div class="list">
+      <div class="item item-divider shop-section-title">
+        <span class="title-copy">New Address</span>
+      </div>
+      <label class="item item-input item-floating-label">
+        <span class="input-label">Full name</span>
+        <input type="text" placeholder="Full name" name="fullName" ng-model="data.fullName">
+      </label>
+      <label class="item item-input item-floating-label">
+        <span class="input-label">Address Line 1</span>
+        <input type="text" placeholder="Address Line 1" name="address1" ng-model="data.address1">
+      </label>
+      <label class="item item-input item-floating-label">
+        <span class="input-label">Address Line 2</span>
+        <input type="text" placeholder="Address Line 2" name="address2" ng-model="data.address2">
+      </label>
+      <label class="item item-input item-floating-label">
+        <span class="input-label">City</span>
+        <input type="text" placeholder="City" name="city" ng-model="data.city">
+      </label>
+      <label class="item item-input item-floating-label">
+        <span class="input-label">State</span>
+        <input type="text" placeholder="State" name="state" ng-model="data.state">
+      </label>
+      <label class="item item-input item-floating-label">
+        <span class="input-label">Country</span>
+        <input type="text" placeholder="Country" name="country" ng-model="data.country">
+      </label>
+      <label class="item item-input item-floating-label">
+        <span class="input-label">Postal Code</span>
+        <input type="number" placeholder="Postal Code" name="postalCode" ng-model="data.postalCode">
+      </label>
+      <label class="item item-input item-floating-label">
+        <span class="input-label">Phone Number</span>
+        <input type="number" placeholder="Phone Number" name="phoneNumber" ng-model="data.phoneNumber">
+      </label>
+      <label class="item item-input item-floating-label">
+        <span class="input-label">Email</span>
+        <input type="email" placeholder="email" name="email" ng-model="data.email">
+      </label>
+      <ion-toggle toggle-class="toggle-energized">Use as my default address</ion-toggle>
+      <div class="row padding">
+        <button type="submit" class="button button-block button-energized save-address-btn" ng-click="shippingAddress()">
+          Save Address
+        </button>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

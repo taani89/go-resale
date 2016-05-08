@@ -1,0 +1,41 @@
+
+<ion-view view-title="Settings" class="settings-view">
+  <ion-content>
+    <div class="list">
+      <div class="item item-divider title">
+        Account
+      </div>
+      <a class="item item-icon-left settings-option" ng-click="uploadProduct()" >
+        <i class="icon ion-ios-upload-outline"></i>
+        Upload a Product
+      </a>
+      <a class="item item-icon-left settings-option" ng-click="uploadResit()" >
+        <i class="icon ion-ios-upload-outline"></i>
+        Upload Resit
+      </a>
+      <a class="item item-icon-left settings-option" ng-click="postForum()" >
+        <i class="icon ion-ios-compose-outline"></i>
+        Post to Forum
+      </a>
+      <div class="item item-divider title">
+        More
+      </div>
+      <a class="item item-icon-left settings-option" ng-click="showTerms()" >
+        <i class="icon ion-ios-information-outline"></i>
+        Terms of Service
+      </a>
+      <a class="item item-icon-left settings-option" ng-click="showPrivacyPolicy()" >
+        <i class="icon ion-ios-locked-outline"></i>
+        Privacy Policy
+      </a>
+      <a class="item item-icon-left settings-option" ng-click="showAboutUs()" >
+        <i class="icon ion-ios-information-empty"></i>
+        About Us
+      </a>
+      <a class="item item-icon-left settings-option" ng-click="logout()" ng-show="isLoggedIn">
+        <i class="icon ion-ios-close-outline"></i>
+        Sign Out
+      </a>
+    </div>
+  </ion-content>
+</ion-view>

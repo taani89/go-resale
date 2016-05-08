@@ -1,0 +1,18 @@
+<ion-modal-view class="modal-view">
+<div class="bar bar-header bar-calm">
+  		<h1 class="title modal-title">Upload Resit</h1>
+		<a class="button button-clear" ng-click="resit_upload_modal.hide()"><span class="icon ion-close"></span></a>
+	</div>
+<ion-content class="has-header padding">
+    <button class="button button-full button-energized" ng-click="addMedia()">
+      Add image
+    </button>
+    <button class="button button-full button-positive" ng-click="sendEmail()">
+      Send mail
+    </button>
+    <br><br>
+    <ion-scroll direction="x" style="height:200px; min-height: 200px; overflow: scroll; white-space: nowrap;">
+      <img ng-repeat="image in images" ng-src="{{urlForImage(image)}}" style="height:200px; padding: 5px 5px 5px 5px;"/>
+    </ion-scroll>
+  </ion-conten>
+</ion-modal-view>

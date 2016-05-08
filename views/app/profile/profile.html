@@ -1,0 +1,28 @@
+<ion-view ng-class="{'own-profile': myProfile}" class="profile-view" cache-view="false" view-title="Profile">
+  <ion-content has-bouncing='false' class="profile-content" delegate-handle="profile-scroll">
+    <div class="row profile-data">
+      <div class="col">
+        <ion-slide-box class="profile-slides" on-slide-changed="slideHasChanged($index)">
+          <ion-slide>
+            <div class="row slide-content">
+              <div class="col col-center user-data" {userId:user.id}>
+                <!-- We need a wrapper with width set for the preload image directive -->
+                <h2 class="user-name">{{user.attributes.username}}</h2>
+              </div>
+            </div>
+          </ion-slide>
+        </ion-slide-box>
+      </div>
+    </div>
+    <div class="row user-interactions">  
+        <div class="row split-actions" ng-if="myProfile">
+          <div class="col">
+            <button class="button button-block icon-left ion-gear-a settings-button" ui-sref="app.settings">
+              Settings
+            </button>
+          </div>
+        </div>   
+    </div>
+    <ion-nav-view class="profile-sub-views" name="profileContent"></ion-nav-view>
+  </ion-content>
+</ion-view>
